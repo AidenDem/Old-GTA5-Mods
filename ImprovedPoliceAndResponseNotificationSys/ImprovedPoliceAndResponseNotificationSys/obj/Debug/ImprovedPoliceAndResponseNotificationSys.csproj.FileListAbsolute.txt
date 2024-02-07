@@ -1,0 +1,2 @@
+C:\Users\Aiden\source\repos\ImprovedPoliceAndResponseNotificationSys\ImprovedPoliceAndResponseNotificationSys\obj\Debug\ImprovedPoliceAndResponseNotificationSys.csproj.AssemblyReference.cache
+C:\Users\Aiden\source\repos\ImprovedPoliceAndResponseNotificationSys\ImprovedPoliceAndResponseNotificationSys\obj\Debug\ImprovedPoliceAndResponseNotificationSys.csproj.CoreCompileInputs.cache
