@@ -6,6 +6,8 @@ The code will probably be really bad and unoptimized, I've done a few minor modi
 Do with it what you want, modify it, reupload it, do whatever u want!
 
 [Source Code](/ImprovedPoliceAndResponseNotificationSys)
+
+[Download](releases/tag/juggernaut-sys)
 ## Mods
 ### 'ImprovedPoliceAndResponseNotificationSys' (aka Juggernaut System)
 A small script originally meant to notify players about wanted level activities but was later remade into a juggernaut system.
