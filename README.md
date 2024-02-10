@@ -1,6 +1,6 @@
 # Old GTA5 Mods By AidenDem
 ## About
-Old Grand Theft Auto 5 Mods that I made in ScriptHookVDotNet.
+Old Grand Theft Auto 5 Mods that I made in ScriptHookVDotNet.  
 The code will probably be really bad and unoptimized, I've done a few minor modifications to the mods.
 
 Do with it what you want, modify it, reupload it, do whatever u want!
@@ -15,7 +15,7 @@ Was released as an optional script for Improved Police & Response.
 
 [Download](https://github.com/AidenDem/Old-GTA5-Mods/releases/tag/juggernaut-sys)
 ### 'IPRDontWrithe'
-Really small script meant to prevent peds from writhing.
+Really small script meant to prevent peds from writhing.  
 Recently updated / changed for improved functionality.
 
 Was released as an optional script for Improved Police & Response.
