@@ -1,0 +1,8 @@
+C:\Users\Aiden\source\repos\IPRDontWrithe\IPRDontWrithe\bin\Debug\IPRDontWrithe.dll
+C:\Users\Aiden\source\repos\IPRDontWrithe\IPRDontWrithe\bin\Debug\IPRDontWrithe.pdb
+C:\Users\Aiden\source\repos\IPRDontWrithe\IPRDontWrithe\bin\Debug\ScriptHookVDotNet3.xml
+C:\Users\Aiden\source\repos\IPRDontWrithe\IPRDontWrithe\obj\Debug\IPRDontWrithe.csproj.AssemblyReference.cache
+C:\Users\Aiden\source\repos\IPRDontWrithe\IPRDontWrithe\obj\Debug\IPRDontWrithe.csproj.CoreCompileInputs.cache
+C:\Users\Aiden\source\repos\IPRDontWrithe\IPRDontWrithe\obj\Debug\IPRDontWrithe.csproj.CopyComplete
+C:\Users\Aiden\source\repos\IPRDontWrithe\IPRDontWrithe\obj\Debug\IPRDontWrithe.dll
+C:\Users\Aiden\source\repos\IPRDontWrithe\IPRDontWrithe\obj\Debug\IPRDontWrithe.pdb
