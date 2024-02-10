@@ -6,7 +6,7 @@ The code will probably be really bad and unoptimized, I've done a few minor modi
 Do with it what you want, modify it, reupload it, do whatever u want!
 ## Mods
 ### 'ImprovedPoliceAndResponseNotificationSys' (aka Juggernaut System)
-A small script originally meant to notify players about wanted level activities but was later remade into a juggernaut system.
+A small script originally meant to notify players about wanted level activities but was later remade into a juggernaut system.  
 I recently changed a few things in the code to get rid of unnecessary variables and ported it to SHVDN3.
 
 Was released as an optional script for Improved Police & Response.
