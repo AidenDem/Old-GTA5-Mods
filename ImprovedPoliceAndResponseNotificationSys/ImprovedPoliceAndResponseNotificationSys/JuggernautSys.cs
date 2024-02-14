@@ -2,6 +2,11 @@
 using GTA;
 using GTA.Math;
 
+/*
+ * Juggernaut System, read Readme.MD for additional information
+ * Made by: AidenFrmGAG (Discord ID: 718761934920351794)
+*/
+
 namespace ImprovedPoliceAndResponseNotificationSys
 {
     public class JuggernautSys : Script
