@@ -7,37 +7,39 @@ namespace ImprovedPoliceAndResponseNotificationSys
     public class JuggernautSys : Script
     {
         // Variables
-		bool iswanted = false;
-		bool juggernautpresent = false;
+	bool iswanted = false;
+	bool juggernautpresent = false;
         // Initialization
-		public JuggernautSys()
+	public JuggernautSys()
         {
-            Tick += OnTick;
-			GTA.UI.Notification.Show("~r~Juggernaut ~y~System ~w~Initialized.");
-		}
+            	Tick += OnTick;
+		GTA.UI.Notification.Show("~r~Juggernaut ~y~System ~w~Initialized.");
+	}
         private void NotifyPlr(string icon, string user, string subject, string msg)
         {
-			if (icon == "Call911")
-			{
-				GTA.UI.Notification.Show(GTA.UI.NotificationIcon.Call911, user, subject, msg, true, false);
-			}
-			else if (icon == "Franklin")
-			{
-				GTA.UI.Notification.Show(GTA.UI.NotificationIcon.Franklin, user, subject, msg, true, false);
-			}
-			else if (icon == "Trevor")
-			{
-				GTA.UI.Notification.Show(GTA.UI.NotificationIcon.Trevor, user, subject, msg, true, false);
-			}
-			else if (icon == "Micheal")
-			{
-				GTA.UI.Notification.Show(GTA.UI.NotificationIcon.Michael, user, subject, msg, true, false);
-			}
-			else if (icon == "Unknown")
-			{
-				GTA.UI.Notification.Show(GTA.UI.NotificationIcon.HumanDefault, user, subject, msg, true, false);
-			}
+		// Could have been written in 3 lines of code now that I look at this again
+  		// Allows you to easily use Notification.Show with less parameters / arguments
+		if (icon == "Call911")
+		{
+			GTA.UI.Notification.Show(GTA.UI.NotificationIcon.Call911, user, subject, msg, true, false);
 		}
+		else if (icon == "Franklin")
+		{
+			GTA.UI.Notification.Show(GTA.UI.NotificationIcon.Franklin, user, subject, msg, true, false);
+    		}
+		else if (icon == "Trevor")
+		{
+			GTA.UI.Notification.Show(GTA.UI.NotificationIcon.Trevor, user, subject, msg, true, false);
+		}
+		else if (icon == "Micheal")
+		{
+			GTA.UI.Notification.Show(GTA.UI.NotificationIcon.Michael, user, subject, msg, true, false);
+		}
+		else if (icon == "Unknown")
+		{
+			GTA.UI.Notification.Show(GTA.UI.NotificationIcon.HumanDefault, user, subject, msg, true, false);
+		}
+	}
         private void OnTick(object sender, EventArgs notif)
         {
             if ((Game.Player.WantedLevel >= 1) && (Game.IsPaused == false) && (Game.IsLoading == false))
@@ -61,6 +63,7 @@ namespace ImprovedPoliceAndResponseNotificationSys
                         }
                         if (Game.Player.WantedLevel >= 3) 
                         {
+			    // Spawn Juggernaut
                             NotifyPlr("Unknown", "The Military", "~g~Juggernaut Notification", "~g~The Lilitary ~w~sent a ~r~Juggernaut ~w~to ~r~Eliminate You~w~!");
                             var newped = World.CreatePed(PedHash.Marine03SMY, World.GetNextPositionOnStreet(Game.Player.Character.GetOffsetPosition(new Vector3(rand.Next(20, 75), 0, rand.Next(20, 75)))));
                             newped.Weapons.Give(WeaponHash.Minigun, 999999999, true, true);
@@ -74,15 +77,18 @@ namespace ImprovedPoliceAndResponseNotificationSys
                             newped.Task.FightAgainst(Game.Player.Character);
                             newped.AddBlip();
                             var quickcounter = 0;
+			    // Wait until dead or distance far away enough
                             while ((newped.IsDead == false) && (Game.Player.WantedLevel >= 3) && (quickcounter < 2400) && (Vector3.Distance(newped.Position,Game.Player.Character.Position)) <= 500)
                             {
                                 Wait(50);
                                 quickcounter++;
                             }
+			    // 'Marks' juggernaut as no longer needed
                             newped.AttachedBlip?.Delete();
                             newped.Kill();
                             newped.IsPersistent = false;
                             NotifyPlr("Unknown", "The Military", "~g~Juggernaut Notification", "The ~r~Juggernaut ~w~is ~y~no longer ~w~in ~r~The Area~w~!");
+			    // Allows a new juggernaut to spawn
                             juggernautpresent = false;
                         }
                         else
